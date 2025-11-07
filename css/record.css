@@ -81,15 +81,15 @@
 }
 
 .sad-stars {
-    background-image: url("../image/record/파란\ 보석.png");
+    background-image: url("/image/record/파란\ 보석.png");
 }
 
 .angry-stars {
-    background-image: url("../image/record/빨간\ 보석.png");
+    background-image: url("/image/record/빨간\ 보석.png");
 }
 
 .worry-stars {
-    background-image: url("../image/record/초록\ 보석.png");
+    background-image: url("/image/record/초록\ 보석.png");
 }
 
 
