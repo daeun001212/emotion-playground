@@ -53,3 +53,7 @@
 
 3. 심리전문가 조언 보기 버튼을 클릭하여 해당 감정에 대한 심리전문가 조언을 추가로 참고할 수 있습니다.
 <img width="1900" height="833" alt="심리전문가조언" src="https://github.com/user-attachments/assets/75d3f790-a7e3-4089-a1ed-5eb7bafc9f32" />
+
+
+## 웹사이트 ##
+https://daeun001212.github.io/emotion-playground/
