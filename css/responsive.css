@@ -182,6 +182,11 @@
         max-width: 350px;
     }
 
+    .speech-container {
+        height: 200px;
+        padding: 0 20px 10px;
+    }
+
     .speech-bubble {
         font-size: 13px;
         line-height: 2.9;
@@ -192,11 +197,13 @@
     .speech-bubble.left {
         margin: 0 20px 3px 10px;
         padding-left: 30px;
+        padding-top: 30px;
     }
 
     .speech-bubble.right {
         margin: 3px 8px 0 20px;
         padding-right: 30px;
+        padding-top: 30px;
     }
 
     .introduce-text {
