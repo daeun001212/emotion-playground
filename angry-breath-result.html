@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 놀이터</title>
+    <link rel="icon" href="image/logo/파비콘 로고.png">
+    <link rel="stylesheet" href="css/emotion-activity-title.css">
+    <link rel="stylesheet" href="css/back-button.css">
+    <link rel="stylesheet" href="css/end-button.css">
+    <link rel="stylesheet" href="css/angry-breath-result.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo/가로 로고.png" alt="감정 놀이터 로고">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="record.html">감정섬 기록</a></li>
+                    <li><a href="diary.html">그림일기</a></li>
+                    <li><a href="parent.html">부모 페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="angry-breath-result-container">
+        <div class="title-header">
+            <button class="back-button"></button>
+            <h1>깊은 숨쉬기</h1>
+        </div>
+
+        <section class="angry-breath-result-section">
+            <div class="result-breath"></div>
+            <p class="result-text">화난 마음을 담아 케이크의 촛불을 모두 꺼보았어요!
+                <br>정말 잘했어요
+            </p>
+            <button id="endButton" class="end-button">끝내기<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v1q0 .425-.288.713T20 7t-.712-.288T19 6V5H5v14h14v-1q0-.425.288-.712T20 17t.713.288T21 18v1q0 .825-.587 1.413T19 21zm13.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h8.175L16.3 9.1q-.275-.275-.288-.687T16.3 7.7q.275-.275.7-.275t.7.275l3.6 3.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-3.6 3.6q-.275.275-.687.288T16.3 16.3q-.275-.275-.275-.7t.275-.7z" />
+                </svg></button>
+        </section>
+    </main>
+
+
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <p>COPYRIGHT RESERVED. YuDaeun</p>
+            <p>대표자명: 유다은</p>
+            <div class="contact">
+                <p>문의 | 이메일: <a href="mailto:y001212@naver.com">y001212@naver.com</a></p>
+                <p>전화 : <a href="tel:010-2330-6271">010-2330-6271</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/back-button.js"></script>
+    <script src="js/end-button.js"></script>
+    <script src="js/angry-breath-result.js"></script>
+</body>
+
+</html>

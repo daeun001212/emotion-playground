@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 놀이터</title>
+    <link rel="icon" href="image/logo/파비콘 로고.png">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/back-button.css">
+    <link rel="stylesheet" href="css/diary.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo/가로 로고.png" alt="감정 놀이터 로고">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="record.html">감정섬 기록</a></li>
+                    <li><a href="diary.html">그림일기</a></li>
+                    <li><a href="parent.html">부모 페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="diary-container">
+        <div class="title-header">
+            <button class="back-button"></button>
+            <h1>그림일기</h1>
+        </div>
+
+        <section class="diary-section">
+            <div class="diary-card">
+                <div class="diary-item">
+                    <img src="image/diary/그림일기1.png" alt="그림일기1">
+                    <p>2025년 10월 20일 월요일</p>
+                </div>
+
+                <div class="diary-item">
+                    <img src="image/diary/그림일기2.png" alt="그림일기2">
+                    <p>2025년 10월 21일 화요일</p>
+                </div>
+
+                <div class="diary-item">
+                    <img src="image/diary/그림일기3.png" alt="그림일기3">
+                    <p>2025년 10월 22일 수요일</p>
+                </div>
+
+                <div class="diary-item">
+                    <img src="image/diary/그림일기4.png" alt="그림일기4">
+                    <p>2025년 10월 23일 목요일</p>
+                </div>
+
+                <div class="diary-item">
+                    <img src="image/diary/그림일기5.png" alt="그림일기5">
+                    <p>2025년 10월 24일 금요일</p>
+                </div>
+
+                <div class="diary-item">
+                    <img src="image/diary/그림일기6.png" alt="그림일기6">
+                    <p>2025년 10월 25일 토요일</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="diaryModal" class="diary-modal">
+        <span class="diary-close">&times;</span>
+        <img class="diary-modal-content" id="diaryModalImage">
+    </div>
+
+
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <p>COPYRIGHT RESERVED. YuDaeun</p>
+            <p>대표자명: 유다은</p>
+            <div class="contact">
+                <p>문의 | 이메일: <a href="mailto:y001212@naver.com">y001212@naver.com</a></p>
+                <p>전화 : <a href="tel:010-2330-6271">010-2330-6271</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/back-button.js"></script>
+    <script src="js/diary-modal.js"></script>
+</body>
+F
+
+</html>

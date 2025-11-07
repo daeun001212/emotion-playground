@@ -1,0 +1,85 @@
+.angry-monster-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 340px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: -20px auto -30px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.monster-area {
+    position: relative;
+    background-color: #FEE3AE;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.monster {
+    width: 500px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.wand {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 500px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.shake {
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,79 @@
+.angry-breath-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 340px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 10px auto -30px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.cake-area {
+    position: relative;
+    background-color: #FEE3AE;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.cake {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.fire {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.fire.left {
+    top: 19%;
+    left: 35%;
+}
+
+.fire.center {
+    top: 16%;
+    left: 44%;
+}
+
+.fire.right {
+    top: 19%;
+    left: 53%;
+}
+
+/* 꺼질 때 효과 (살짝 위로 올라가며 희미해짐) */
+.fade-out {
+    opacity: 0;
+}

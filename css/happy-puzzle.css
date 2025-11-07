@@ -1,0 +1,126 @@
+.happy-puzzle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.happy-puzzle-section {
+    margin: 0 auto;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 340px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 10px auto 30px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.puzzle {
+    background-color: #FEE3AE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    padding: 40px 60px;
+    margin: -30px auto 40px;
+    min-width: 700px;
+    min-height: 550px;
+}
+
+.puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    background-color: #FDE68A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+}
+
+.drop-zone {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    transition: background-color 0.2s;
+}
+
+.drop-zone.hover {
+    background-color: #FDE68A;
+}
+
+.drop-zone:nth-child(1) {
+    background-image: url(../image/activity/puzzle/파란\ 퍼즐\ 투명.png);
+}
+
+.drop-zone:nth-child(2) {
+    background-image: url(../image/activity/puzzle/보라\ 퍼즐\ 투명.png);
+}
+
+.drop-zone:nth-child(3) {
+    background-image: url(../image/activity/puzzle/분홍\ 퍼즐\ 투명.png);
+}
+
+.drop-zone:nth-child(4) {
+    background-image: url(../image/activity/puzzle/초록\ 퍼즐\ 투명.png);
+}
+
+.pieces-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.puzzle-piece {
+    background-color: #fadf75;
+    width: 150px;
+    height: 150px;
+    cursor: grab;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.puzzle-piece:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px #fff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #FFD93D;
+    }
+}
+
+.solved {
+    animation: sparkle 0.6s ease-in-out;
+}

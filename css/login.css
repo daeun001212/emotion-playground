@@ -1,0 +1,73 @@
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 150px 0;
+}
+
+.login-box {
+    width: 80%;
+    max-width: 610px;
+    padding: 80px 100px 50px 100px;
+    background-image: url(../image/background/스케치북.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    padding: 12px 14px 12px 20px;
+    margin: 15px 0;
+    border: 2px solid #4E342E;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.login-options {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #3E2723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.login-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.login-options input[type="checkbox"] {
+    margin-right: 4px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.login-options a {
+    color: #3E2723;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}

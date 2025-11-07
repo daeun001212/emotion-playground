@@ -1,0 +1,91 @@
+.activity-island-choice-container {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.island-box {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: #5D4037;
+    overflow: hidden;
+    position: relative;
+}
+
+.island-title {
+    background-color: #4E342E;
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 12px 0;
+}
+
+.island-content {
+    position: relative;
+    height: 650px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.island-background {
+    background-image: url(../image/island/분노섬.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.fairy {
+    background-image: url(../image/record/요정\ 테두리.png);
+    position: absolute;
+    right: 19%;
+    top: 20%;
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    animation: floatFairy 3s ease-in-out infinite;
+}
+
+@keyframes floatFairy {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.speech-bubble {
+    background-image: url(../image/introduce/말풍선3.png);
+    position: absolute;
+    right: 13%;
+    top: 8%;
+    width: 300px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-size: 14px;
+    font-weight: 600;
+}

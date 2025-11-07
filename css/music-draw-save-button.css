@@ -1,0 +1,17 @@
+.music-draw-save-button {
+    background-color: #FFCF33;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E2723;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.music-draw-save-button:hover {
+    transform: scale(1.05);
+}

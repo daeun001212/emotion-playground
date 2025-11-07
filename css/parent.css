@@ -1,0 +1,146 @@
+/*parent-section*/
+/*emotion-graph-section*/
+.parent-section {
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    text-align: center;
+    min-width: 900px;
+}
+
+h3 {
+    background-color: #8D6E63;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.parent-section .paper-box {
+    background-image: url("../image/background/종이\ 질감\ 배경.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 0px 30px 60px 30px;
+    margin: 20px 0 80px 0;
+}
+
+.emotion-graph {
+    display: flex;
+    align-items: stretch;
+    margin: 10px 0;
+    position: relative;
+}
+
+.emotion-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #3E2723;
+    padding: 30px 20px 0 0;
+    gap: 20px;
+    width: 100px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.emotion-labels>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emotion-labels img {
+    width: 50px;
+    height: 50px;
+    background-color: #3E2723;
+    padding: 3px;
+    border-radius: 100px;
+    flex-shrink: 0;
+}
+
+.graph-area {
+    flex: 1;
+    position: relative;
+    padding: 0 10px;
+    min-width: 0;
+}
+
+.grid-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #3E2723;
+}
+
+.grid-line:nth-child(1) {
+    top: 100px;
+}
+
+.grid-line:nth-child(2) {
+    top: 190px;
+}
+
+.grid-line:nth-child(3) {
+    top: 280px;
+}
+
+.grid-line:nth-child(4) {
+    top: 360px;
+}
+
+.graph-svg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    display: block;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -50px;
+    left: 60px;
+    right: 60px;
+    font-weight: bold;
+    color: #3E2723;
+}
+
+/*emotion-dialog-section*/
+.emotion-dialog-section .dialog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px 0 40px;
+    font-size: 28px;
+    line-height: 1.5;
+    font-family: nanumpen;
+}
+
+.dialog-box .question {
+    display: inline;
+    margin-bottom: -10px;
+}
+
+.dialog-box .question-happy {
+    background-color: #FFD93D;
+}
+
+.dialog-box .question-sad {
+    background-color: #95C8EC;
+}
+
+.dialog-box .question-angry {
+    background-color: #EF4438;
+}
+
+.dialog-box .question-worry {
+    background-color: #81C785;
+}

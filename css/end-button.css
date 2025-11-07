@@ -1,0 +1,23 @@
+.end-button {
+    background-color: #FFCF33;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3E2723;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto -40px;
+    transition: all 0.3s ease;
+}
+
+.end-button:hover {
+    background-color: #E9BB00;
+    font-weight: bolder;
+    transform: scale(1.05);
+}

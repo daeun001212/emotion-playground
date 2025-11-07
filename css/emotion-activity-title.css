@@ -1,0 +1,21 @@
+.title-header {
+    background-color: #FFD93D;
+    color: #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 0px;
+    border-radius: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.title-header h1 {
+    margin: 0;
+    background-color: #FFF9C4;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 1.2;
+}

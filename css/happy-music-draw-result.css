@@ -1,0 +1,43 @@
+.happy-music-draw-result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    min-height: calc(100vh - 250px);
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+}
+
+.result-picture {
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+}
+
+.result-picture::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background-image: url('../image/background/스케치북.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+    opacity: 1;
+}
+
+.result-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3E2723;
+    text-align: center;
+    line-height: 1.5;
+    margin: 50px 0;
+}

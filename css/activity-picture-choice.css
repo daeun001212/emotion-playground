@@ -1,0 +1,43 @@
+.activity-picture-choice-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    padding-top: 30px;
+}
+
+.choice-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px 30px;
+    transition: all 0.3s ease;
+}
+
+.choice-box:hover {
+    transform: scale(1.03);
+}
+
+.choice-image {
+    width: 360px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.choice-image.draw {
+    background-image: url("../image/background/그림\ 그리기.jpg");
+}
+
+.choice-image.gallery {
+    background-image: url("../image/background/갤러리.png");
+    cursor: pointer;
+}

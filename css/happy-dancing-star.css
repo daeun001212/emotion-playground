@@ -1,0 +1,116 @@
+.happy-dancing-star-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 280px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 40px auto 30px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.star-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 10px 0;
+    background-color: #FEE3AE;
+    padding: 60px 40px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.star {
+    width: 124px;
+    height: 124px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.3s;
+}
+
+@keyframes floatAround {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(8px, -10px) rotate(20deg);
+    }
+
+    50% {
+        transform: translate(-10px, 8px) rotate(-20deg);
+    }
+
+    75% {
+        transform: translate(5px, -8px) rotate(20deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+.floating {
+    animation: floatAround 3.5s ease-in-out infinite alternate;
+}
+
+.star:hover {
+    transform: scale(1.1);
+}
+
+.star.correct {
+    filter: brightness(1.1);
+    animation: none;
+    transform: scale(1.15);
+    transition: 0.3s;
+    animation: sparkle 0.8s ease-in-out;
+}
+
+@keyframes sparkle {
+    0% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: brightness(1.4);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: brightness(1.2);
+        transform: scale(1.15);
+    }
+}
+
+.star.wrong {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}

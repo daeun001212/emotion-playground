@@ -1,0 +1,17 @@
+.title-header {
+    background-color: #4E342E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 0px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.title-container h1 {
+    line-height: 92px;
+    margin: 0;
+    line-height: 92px;
+}

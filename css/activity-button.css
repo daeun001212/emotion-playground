@@ -1,0 +1,45 @@
+.activity-buttons {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.activity-buttons a {
+    text-decoration: none;
+}
+
+.activity-island-choice-container .activity-button {
+    position: absolute;
+    background-color: #6D4C41;
+    border: 4px solid white;
+    border-radius: 200px;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+.activity-button:hover {
+    background-color: #49352d;
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+.activity-island-choice-container .activity-buttons a:nth-child(1) .activity-button {
+    top: 31%;
+    left: 35%;
+}
+
+.activity-island-choice-container .activity-buttons a:nth-child(2) .activity-button {
+    top: 56%;
+    left: 50%;
+}
+
+.activity-island-choice-container .activity-buttons a:nth-child(3) .activity-button {
+    top: 78%;
+    left: 34%;
+}

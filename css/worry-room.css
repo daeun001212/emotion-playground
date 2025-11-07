@@ -1,0 +1,93 @@
+.worry-room-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 410px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 20px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.room-figure {
+    background-color: #FEE3AE;
+    border-radius: 50px;
+    padding: 20px 70px;
+    margin: -10px 0 20px;
+    max-width: 1000px;
+}
+
+.room-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.room {
+    width: 700px;
+    height: 500px;
+    background-image: url("../image/activity/room/방.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.furniture-list {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.furniture {
+    width: 60px;
+    height: 60px;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.furniture:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+}
+
+.room img {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.room img:hover {
+    transform: scale(1.05);
+}

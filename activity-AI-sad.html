@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 놀이터</title>
+    <link rel="icon" href="image/logo/파비콘 로고.png">
+    <link rel="stylesheet" href="css/activity-title.css">
+    <link rel="stylesheet" href="css/back-button.css">
+    <link rel="stylesheet" href="css/activity-AI-sad.css">
+    <link rel="stylesheet" href="css/retry-button.css">
+    <link rel="stylesheet" href="css/go-island-button.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo/가로 로고.png" alt="감정 놀이터 로고">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="record.html">감정섬 기록</a></li>
+                    <li><a href="diary.html">그림일기</a></li>
+                    <li><a href="parent.html">부모 페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="activity-AI-section">
+        <div class="title-header">
+            <button class="back-button"></button>
+            <h1>AI 감정 분석 결과</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+
+        <section class="ai-result" id="aiResult">
+            <div class="emotion-icon"></div>
+            <h2 class="emotion-text">슬픔</h2>
+            <div class="emotion-island"></div>
+
+            <div class="button-group">
+                <a href="activity-picture-choice.html"><button class="retry-button">다시하기<img
+                            src="image/button/X.png"></button></a>
+                <button class="go-island-button">슬픔섬 가기<img src="image/button/O.png"></button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <p>COPYRIGHT RESERVED. YuDaeun</p>
+            <p>대표자명: 유다은</p>
+            <div class="contact">
+                <p>문의 | 이메일: <a href="mailto:y001212@naver.com">y001212@naver.com</a></p>
+                <p>전화 : <a href="tel:010-2330-6271">010-2330-6271</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/back-button.js"></script>
+    <script src="js/AI.js"></script>
+</body>
+
+</html>

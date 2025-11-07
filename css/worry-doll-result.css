@@ -1,0 +1,52 @@
+.worry-doll-result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 80px;
+}
+
+.result-doll {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-image: url("../image/activity/doll/인형\ 도안.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 40px;
+    animation: floatDoll 4s ease-in-out infinite;
+}
+
+.result-doll::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 2;
+}
+
+.result-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3E2723;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+@keyframes floatDoll {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

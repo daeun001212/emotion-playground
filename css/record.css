@@ -1,0 +1,119 @@
+/*record-container*/
+.record-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: -90px;
+}
+
+
+/*record-section*/
+.record-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 110px 0;
+    max-width: none;
+    overflow: hidden;
+    min-width: 1000px;
+}
+
+.record-background {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+.fairy {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    width: 12%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.medal {
+    position: absolute;
+    top: 6%;
+    right: 20%;
+    width: 12%;
+    z-index: 3;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.happy-stars,
+.sad-stars,
+.angry-stars,
+.worry-stars {
+    position: absolute;
+    width: clamp(18px, 3vw, 40px);
+    aspect-ratio: 1/1;
+    background-color: #3E2723;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    border: 4px solid white;
+    animation: twinkle 1.5s infinite ease-in-out alternate;
+}
+
+.happy-stars {
+    background-image: url("../image/record/노란\ 보석.png");
+}
+
+.sad-stars {
+    background-image: url("../image/record/파란\ 보석.png");
+}
+
+.angry-stars {
+    background-image: url("../image/record/빨간\ 보석.png");
+}
+
+.worry-stars {
+    background-image: url("../image/record/초록\ 보석.png");
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+    50% {
+        transform: scale(1.1) translate(-50%, -50%);
+    }
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.6;
+        transform: scale(0.95);
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}

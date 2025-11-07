@@ -1,0 +1,30 @@
+.worry-room-result-section {
+    text-align: center;
+    margin-top: -50px;
+    padding: 60px 0;
+}
+
+.result-room {
+    width: 500px;
+    height: 400px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-room img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.result-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #3E2723;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}

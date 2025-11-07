@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 놀이터</title>
+    <link rel="icon" href="image/logo/파비콘 로고.png">
+    <link rel="stylesheet" href="css/activity-title.css">
+    <link rel="stylesheet" href="css/back-button.css">
+    <link rel="stylesheet" href="css/save-button.css">
+    <link rel="stylesheet" href="css/activity-draw.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo/가로 로고.png" alt="감정 놀이터 로고">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="record.html">감정섬 기록</a></li>
+                    <li><a href="diary.html">그림일기</a></li>
+                    <li><a href="parent.html">부모 페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="activity-draw-container">
+        <div class="title-header">
+            <button class="back-button"></button>
+            <h1>오늘 나의 감정을 자유롭게 그려보세요!</h1>
+        </div>
+
+        <section class="activity-draw-section">
+            <div class="color-palette">
+                <div class="color" style="background-color: #B71C1C;"></div>
+                <div class="color" style="background-color: #E65100;"></div>
+                <div class="color" style="background-color: #FFEB3B;"></div>
+                <div class="color" style="background-color: #81C784;"></div>
+                <div class="color" style="background-color: #64B5F6;"></div>
+                <div class="color" style="background-color: #0D47A1;"></div>
+                <div class="color" style="background-color: #FFFFFF;"></div>
+                <div class="color" style="background-color: #FFE0B2;"></div>
+                <div class="color" style="background-color: #EF9A9A;"></div>
+                <div class="color" style="background-color: #7B1FA2;"></div>
+                <div class="color" style="background-color: #6D4C41;"></div>
+                <div class="color" style="background-color: #000000;"></div>
+            </div>
+
+            <div class="sketchbook">
+                <canvas id="drawingCanvas"></canvas>
+            </div>
+
+            <div class="toolbox">
+                <div class="tools">
+                    <img src="image/draw/연필.png" class="tool active" id=pencil data-tool="pencil" alt="연필">
+                    <img src="image/draw/크레용.png" class="tool" id=crayon data-tool="crayon" alt="크레용">
+                    <img src="image/draw/물감붓.png" class="tool" id=brush data-tool="brush" alt="붓">
+                    <img src="image/draw/지우개.png" class="tool" id=eraser data-tool="eraser" alt="지우개">
+                    <img src="image/draw/쓰레기통.png" class="tool" id=trashcan data-tool="trashcan" alt="전체 지우기">
+                </div>
+
+                <div class="sizes">
+                    <div class="size" data-size="2"></div>
+                    <div class="size" data-size="5"></div>
+                    <div class="size" data-size="10"></div>
+                    <div class="size" data-size="15"></div>
+                    <div class="size" data-size="20"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="save-container">
+            <button id="saveButton" class="save-button">
+                저장하기
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 17.5L6 11.5l1.4-1.4l3.6 3.55V3h2v10.65l3.6-3.55L18 11.5zM5 21v-2h14v2z" />
+                </svg>
+            </button>
+        </div>
+    </main>
+
+
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <p>COPYRIGHT RESERVED. YuDaeun</p>
+            <p>대표자명: 유다은</p>
+            <div class="contact">
+                <p>문의 | 이메일: <a href="mailto:y001212@naver.com">y001212@naver.com</a></p>
+                <p>전화 : <a href="tel:010-2330-6271">010-2330-6271</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/back-button.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+
+</html>

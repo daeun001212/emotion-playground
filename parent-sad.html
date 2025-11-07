@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>감정 놀이터</title>
+    <link rel="icon" href="image/logo/파비콘 로고.png">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/back-button.css">
+    <link rel="stylesheet" href="css/advice-button.css">
+    <link rel="stylesheet" href="css/parent.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo/가로 로고.png" alt="감정 놀이터 로고">
+                </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기">
+                ☰
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="record.html">감정섬 기록</a></li>
+                    <li><a href="diary.html">그림일기</a></li>
+                    <li><a href="parent.html">부모 페이지</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="parent-container">
+        <div class="title-header">
+            <button class="back-button"></button>
+            <h1>부모 페이지</h1>
+        </div>
+
+        <section class="parent-section">
+            <h3>주간 감정 그래프</h3>
+            <section class="emotion-graph-section paper-box">
+
+                <div class="emotion-graph">
+                    <div class="emotion-labels">
+                        <div><img src="image/emotion/기쁨.png">기쁨</div>
+                        <div><img src="image/emotion/슬픔.png">슬픔</div>
+                        <div><img src="image/emotion/분노.png">화남</div>
+                        <div><img src="image/emotion/걱정.png">걱정</div>
+                    </div>
+
+                    <div class="graph-area">
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+
+                        <svg viewBox="0 0 400 200" class="graph-svg" preserveAspectRatio="xMidYMid meet">
+                            <polyline points="39,172 111,75 198,140 280,75" fill="none" stroke="#4F2E18"
+                                stroke-width="1" />
+
+                            <image href="image/emotion/걱정.png" x="18" y="168" width="30" height="30" />
+                            <image href="image/emotion/슬픔.png" x="100" y="68" width="30" height="30" />
+                            <image href="image/emotion/분노.png" x="184" y="120" width="30" height="30" />
+                            <image href="image/emotion/슬픔.png" x="267" y="68" width="30" height="30" />
+                        </svg>
+
+
+                        <div class="weekdays">
+                            <span>월</span>
+                            <span>화</span>
+                            <span>수</span>
+                            <span>목</span>
+                            <span>금</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h3>오늘의 감정 대화</h3>
+            <section class="emotion-dialog-section paper-box">
+                <div class="dialog-box">
+                    <p class="question-sad">"무슨 일이 슬프게 만들었어?"</p>
+                    <p class="answer">
+                        라며 아이가 슬픈 감정을
+                        <br>천천히 이야기할 수 있도록 기다려주고
+                        <br>안아주며 마음을 토닥여주세요.
+                    </p>
+                </div>
+            </section>
+
+            <a href="advice-sad.html"><button class="advice-button">심리전문가 조언 보기<svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M14.375 21.825L8 20.025V11h1.6q.175 0 .35.038t.35.087l6.925 2.575q.35.125.563.45t.212.675q0 .525-.363.85T16.8 16h-2.625q-.125 0-.187-.012t-.163-.063L12.7 15.5q-.2-.075-.4.025t-.25.275q-.05.2.025.375t.275.25l1.475.525q.05.025.15.038t.175.012H21q.8 0 1.4.575T23 19l-7.375 2.775q-.25.1-.612.113t-.638-.063M2 20v-7q0-.825.588-1.412T4 11t1.413.588T6 13v7q0 .825-.587 1.413T4 22t-1.412-.587T2 20M13.925 8.225l4.975-4.95q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-5.675 5.675q-.3.3-.7.3t-.7-.3l-2.85-2.85q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288z" />
+                    </svg></button></a>
+        </section>
+    </main>
+
+
+    <footer>
+        <hr>
+        <div class="footer-container">
+            <p>COPYRIGHT RESERVED. YuDaeun</p>
+            <p>대표자명: 유다은</p>
+            <div class="contact">
+                <p>문의 | 이메일: <a href="mailto:y001212@naver.com">y001212@naver.com</a></p>
+                <p>전화 : <a href="tel:010-2330-6271">010-2330-6271</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/back-button.js"></script>
+</body>
+
+</html>

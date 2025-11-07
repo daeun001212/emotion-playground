@@ -1,0 +1,83 @@
+.sad-cloud-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sad-cloud-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 410px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: -10px auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cloud {
+    background-color: #FEE3AE;
+    border-radius: 50px;
+    padding: 50px 50px 10px;
+}
+
+.cloud-area {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.cloud-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.emotion-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 70px 150px 75px;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.emotion {
+    width: 60px;
+    height: 60px;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.emotion:active {
+    transform: scale(1.1);
+    cursor: grabbing;
+}
+
+.cloud-area .emotion {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}

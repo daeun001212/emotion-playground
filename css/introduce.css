@@ -1,0 +1,149 @@
+/*container*/
+.introduce-container {
+    text-align: center;
+    background-color: #FFF9C4;
+    padding: 0;
+    color: #3E2723;
+}
+
+
+/*section*/
+.introduce-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FEE3AE;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 40px auto 15px auto;
+    padding: 40px;
+}
+
+.introduce-logo {
+    display: block;
+    margin: 0 auto 12px;
+    width: 280px;
+}
+
+.introduce-section h2 {
+    display: block;
+    margin: 12px 0 35px;
+    line-height: 1.6;
+    width: 100%;
+    white-space: nowrap;
+    background-color: #FEE3AE;
+    color: #3E2723;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/*speech-container*/
+.speech-container {
+    background-color: #795649;
+    border-radius: 10px;
+    padding: 15px 0;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.speech-bubble {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3E2723;
+    font-size: 15px;
+    padding: 12px 40px;
+    max-width: 80%;
+    line-height: 2.9;
+    position: relative;
+    min-height: 40px;
+    background-color: transparent;
+}
+
+.speech-bubble.left {
+    align-self: flex-start;
+    text-align: left;
+    background-image: url("../image/introduce/카톡\ 말풍선1.png");
+    margin: 0 150px 2px 20px;
+    padding-left: 60px;
+}
+
+.speech-bubble.right {
+    align-self: flex-end;
+    text-align: right;
+    background-image: url("../image/introduce/카톡\ 말풍선2.png");
+    margin: 2px 20px 0 150px;
+    padding-right: 60px;
+}
+
+
+/*text*/
+.introduce-text {
+    border: 1px solid #4E342E;
+    border-radius: 10px;
+    padding: 20px 70px;
+    margin-top: 40px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+/*box*/
+.introduce-box {
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.introduce-box ol,
+.introduce-box ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.introduce-box li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.introduce-box ul li {
+    list-style-type: none;
+    padding-left: 1em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.introduce-box h3 {
+    background-color: #FFD93D;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3E2723;
+    margin: 30px 0 10px 0;
+}
+
+.introduce-box ol {
+    margin: 10px 0 0 20px;
+}
+
+.introduce-box p {
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}

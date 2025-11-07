@@ -1,0 +1,89 @@
+.sad-letter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sad-letter-section {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.speech-bubble {
+    background-image: url('../image/introduce/말풍선3.png');
+    width: 340px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E2723;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.letter-area {
+    background-color: #FEE3AE;
+    border-radius: 50px;
+    padding: 50px 50px;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto 40px;
+}
+
+.toolbox {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    margin: 0 150px 20px;
+    border-radius: 20px;
+}
+
+.tool {
+    width: 45px;
+    transition: transform 0.2s ease;
+}
+
+.tool:hover {
+    transform: scale(1.2);
+}
+
+.tool.active {
+    transform: scale(1.15);
+}
+
+.sketchbook {
+    background-image: url('../image/activity/letter/위로\ 편지지.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    margin: -50px;
+}
+
+#letterCanvas {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 500px;
+    height: 370px;
+    border-radius: 10px;
+    cursor: crosshair;
+}

@@ -1,0 +1,94 @@
+.advice-section {
+    max-width: 900px;
+    margin: 40px auto -10px auto;
+    text-align: center;
+    font-family: nanumpen;
+    color: #3E2723;
+}
+
+.paper-box {
+    background-image: url("../image/background/종이\ 질감\ 배경.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 40px 100px;
+    margin: 0 auto 40px auto;
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid #3E2723;
+}
+
+.advice-today {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.highlight {
+    padding: 3px 8px;
+    font-weight: bold;
+}
+
+.highlight-happy {
+    background-color: #FFD93D;
+}
+
+.highlight-sad {
+    background-color: #95C8EC;
+}
+
+.highlight-angry {
+    background-color: #EF4438;
+}
+
+.highlight-worry {
+    background-color: #81C785;
+}
+
+.advice-item {
+    margin: 30px auto;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+}
+
+.advice-item h3 {
+    background-color: #8D6E63;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px 10px 0 0;
+    font-size: 26px;
+    margin: 0;
+    display: inline-block;
+    font-family: pretendard;
+}
+
+.advice-item .highlight-box {
+    color: white;
+}
+
+.advice-item .highlight-box-happy {
+    background-color: #FFD93D;
+}
+
+.advice-item .highlight-box-sad {
+    background-color: #95C8EC;
+}
+
+.advice-item .highlight-box-angry {
+    background-color: #EF4438;
+}
+
+.advice-item .highlight-box-worry {
+    background-color: #81C785;
+}
+
+.advice-content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin-right: -20px;
+    font-size: 28px;
+    line-height: 1.5;
+}
