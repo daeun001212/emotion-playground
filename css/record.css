@@ -76,7 +76,8 @@
 }
 
 .happy-stars {
-    background-image: url("../image/record/노란\ 보석.png");
+    /* background-image: url("../image/record/노란\ 보석.png"); */
+    background-image: url("/image/record/노란\ 보석.png");
 }
 
 .sad-stars {
