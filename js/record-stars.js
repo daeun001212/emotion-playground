@@ -40,7 +40,7 @@ function renderStars() {
             star.classList.add(starType.className);
             star.style.position = 'absolute';
             star.style.aspectRatio = '1/1';
-            star.style.backgroundImage = `url('/image/record/${starType.img}')`;
+            star.style.backgroundImage = `url('image/record/${starType.img}')`;
             star.style.backgroundSize = 'contain';
             star.style.backgroundRepeat = 'no-repeat';
             star.style.top = `${top}%`;
